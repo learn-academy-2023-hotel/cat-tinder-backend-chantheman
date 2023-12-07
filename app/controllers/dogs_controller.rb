@@ -18,7 +18,7 @@ class DogsController < ApplicationController
 
     def destroy
         dog = Dog.find(params[:id])
-        dog.delete
+        dog.destroy
         render json: dog
     end
 
